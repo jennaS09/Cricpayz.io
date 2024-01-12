@@ -1,4 +1,5 @@
-//  navbar 
+// Navbar Javascript 
+
 (() =>{
  
 	const openNavMenu = document.querySelector(".open-nav-menu"),
@@ -65,4 +66,4 @@
   
   })();
 
-//   end navbar
+//   navbar javascript ends 
