@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
 body{
 	line-height: 1.5;
 	font-family: 'Raleway', sans-serif;
@@ -15,6 +17,12 @@ body.hidden-scrolling{
 	margin:auto;
 	
 }
+.flag {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin-right: 27px;
+  }
 ul{
 	list-style: none;
 	margin:0;
@@ -36,6 +44,7 @@ a{
 	width: 53%;
 	border-radius: 8px;
   }
+
 .header{
 	position: absolute;
 	width: 100%;
@@ -109,12 +118,6 @@ a{
 	
 }
 
-.flag {
-	border-radius: 50%;
-	width: 30px;
-	height: 30px;
-	margin-right: 27px;
-  }
 .header .menu > .menu-item:hover > a .plus:before,
 .header .menu > .menu-item:hover > a .plus:after{
    background-color: purple;
@@ -235,7 +238,6 @@ a{
 	transition: all 0.3s ease;
 }
 
-
 @media(max-width: 991px){
 	.header .menu-overlay.active{
 	visibility: visible;
@@ -323,31 +325,118 @@ a{
 	  }	
 
 }
+
 /* Navbar Css Ends Here  */
- /* component-first  */
-.component-first{
-    height: 550px;
-    margin-top: 93px;
-    background-image: url(/assets/img/blue-bg-1.webp);
+
+/* t&C  */
+
+body {
+	margin: 0;
+	padding: 0;
 }
-.first-row{
-    display: flex;
-   padding: 50px;
+
+.T-para {
+	padding: 1em;
+	text-align: center;
+	margin-top: 10%;
+	color: #7e7e7e;
 }
-.first-one{
-    width:30%;
-    
+
+hr {
+	margin: 30px 150px;
 }
-.first-two{
-    text-align: center;
-    width: 70%;
+
+.T-para p {
+	text-align: justify;
+	font-size: 18px;
+	line-height: 1.5rem;
+	color: #7e7e7e;
+	margin: 30px 0px;
+	margin-top: 32px;
+	font-family: 'Arial', sans-serif;
+	margin: 32px 180px;
 }
-video{
-    width: 700px;
+
+.Tsub-para h2 {
+	padding: 1em;
+	font-family: 'Arial', sans-serif;
+	color: #7e7e7e;
+	margin: 0px 180px;
+	margin-left: 170px;
 }
+
+.Tsub-para p {
+	text-align: justify;
+	font-size: 18px;
+	line-height: 1.5rem;
+	color: #7e7e7e;
+	margin: 30px 0px;
+	margin: 0px 180px;
+}
+
+@media screen and (max-width: 600px) {
+	.T-para {
+		padding: 1em;
+		text-align: center;
+		margin-top: 20%;
+		color: #7e7e7e;
+	}
+
+	.T-para p {
+		text-align: justify;
+		font-size: 15px;
+		line-height: 1.5rem;
+		color: #7e7e7e;
+		margin: 2px 25px;
+	}
+
+	.Tsub-para h2 {
+		text-align: center;
+		margin-top: 10px;
+		color: #7e7e7e;
+		margin-left: 52px;
+		width: 291px;
+	}
+	.Tsub-para p {
+		text-align: justify;
+		font-size: 15px;
+		line-height: 1.5rem;
+		color: #7e7e7e;
+		margin: 2px 25px;
+	}
+}
+
+/* end t&c */
+
+/* component-first  */
+.component-first {
+	height: 550px;
+	margin-top: 93px;
+	background-image: url(/assets/img/blue-bg-1.webp);
+}
+
+.first-row {
+	display: flex;
+	padding: 50px;
+}
+
+.first-one {
+	width: 30%;
+
+}
+
+.first-two {
+	text-align: center;
+	width: 70%;
+}
+
+video {
+	width: 700px;
+}
+
 @media (max-width: 768px) {
-    video{
-        max-width: 45rem !important;
-        height: auto !important;
-    }
+	video {
+		max-width: 45rem !important;
+		height: auto !important;
+	}
 }
